@@ -1,49 +1,42 @@
 <template>
   <div class="ide-container">
-    <div class="navbar">My VSCode Web IDE</div>
-    <div class="workspace">
-      <div class="sidebar">
-        <div class="section explorer">
-          <div class="section-header">EXPLORER</div>
-          <ul class="files">
-            <li class="file">deployment.yaml</li>
-            <li class="file">service.yaml</li>
-            <li class="file">ingress.yaml</li>
-          </ul>
-        </div>
-        <!-- Add more sections as needed (e.g., Extensions) -->
-      </div>
-      <div class="editor">
-        <div class="editor-header">deployment.yaml</div>
-        <!-- Placeholder for Monaco Editor or static content -->
-        <div class="code-editor">
-          <pre><code>apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: nginx-deployment
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: nginx
-  template:
-    metadata:
-      labels:
-        app: nginx
-    spec:
-      containers:
-      - name: nginx
-        image: nginx:1.14.2
-        ports:
-        - containerPort: 80</code></pre>
-        </div>
-      </div>
+    <!-- Navbar -->
+    <div class="navbar">
+      <span>File</span>
+      <span>Edit</span>
+      <span>View</span>
+      <span>Go</span>
+      <span>Help</span>
     </div>
-    <div class="terminal">
-      <div class="terminal-header">Terminal</div>
-      <div class="terminal-body">
-        <span class="terminal-line">user@vscode:~$ echo "Ready to code!"</span>
-        <span class="terminal-cursor"></span>
+
+    <!-- Main IDE Layout -->
+    <div class="main-layout">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="sidebar-item">Explorer</div>
+        <div class="sidebar-item">Search</div>
+        <div class="sidebar-item">Source Control</div>
+        <div class="sidebar-item">Run and Debug</div>
+        <div class="sidebar-item">Extensions</div>
+      </div>
+
+      <!-- Editor + Terminal Container -->
+      <div class="editor-terminal">
+        <!-- Editor -->
+        <div class="editor">
+          <div class="tab">index.html</div>
+          <div class="code-editor"> <!-- Placeholder for code or Monaco Editor -->
+            <pre><code>&lt;!-- Sample HTML content --&gt;
+&lt;div&gt;Hello, VS Code!&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+        <!-- Terminal -->
+        <div class="terminal">
+          <div class="terminal-tab">Terminal</div>
+          <div class="terminal-window">
+            user@vscode:~$ echo "Hello, World!"
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -57,97 +50,69 @@ spec:
 }
 
 .navbar {
-  background-color: #0066B8; /* VSCode blue */
+  background-color: #007acc;
   color: white;
-  padding: 10px 20px;
-  font-weight: bold;
+  padding: 10px;
+  display: flex;
+  gap: 15px;
 }
 
-.workspace {
+.main-layout {
   display: flex;
   flex: 1;
-  overflow: hidden;
 }
 
 .sidebar {
-  width: 240px;
-  background: #252526; /* Dark gray */
-  color: #ccc;
-  overflow-y: auto;
+  background-color: #333;
+  color: white;
+  width: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.section {
-  margin: 10px;
-}
-
-.section-header {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.files {
-  list-style: none;
-  padding: 0;
-}
-
-.file {
+.sidebar-item:hover {
   cursor: pointer;
-  padding: 5px 10px;
+  background-color: #555;
 }
 
-.file:hover {
-  background-color: #3C3C3C;
-}
-
-.editor {
+.editor-terminal {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
-.editor-header {
-  background-color: #1E1E1E; /* Header */
-  color: #9CDCFE; /* Light blue */
+.editor {
+  flex-grow: 1;
+  border-bottom: 1px solid #444;
+}
+
+.tab {
+  background-color: #1e1e1e;
   padding: 10px;
-  border-bottom: 1px solid #3C3C3C;
+  color: #ccc;
 }
 
 .code-editor {
-  flex-grow: 1;
-  background-color: #1E1E1E;
-  color: #D4D4D4;
   padding: 20px;
+  background-color: #1e1e1e;
+  color: #9CDCFE;
   overflow-y: auto;
+  height: calc(100% - 30px);
 }
 
 .terminal {
+  background-color: #1e1e1e;
+  color: #ccc;
+}
+
+.terminal-tab {
   background-color: #333;
-  color: #8EC07C; /* Green */
-}
-
-.terminal-header {
-  background-color: #1E1E1E;
-  color: white;
-  padding: 5px 10px;
-  border-top: 1px solid #3C3C3C;
-}
-
-.terminal-body {
   padding: 10px;
-  font-family: monospace;
 }
 
-.terminal-cursor {
-  display: inline-block;
-  background-color: #8EC07C;
-  width: 10px;
-  height: 20px;
-  margin-left: 5px;
-  animation: blink-animation 1s step-end infinite;
-}
-
-@keyframes blink-animation {
-  from, to { background-color: transparent }
-  50% { background-color: #8EC07C; }
+.terminal-window {
+  padding: 10px;
 }
 </style>
