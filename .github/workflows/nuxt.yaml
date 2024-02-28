@@ -41,6 +41,6 @@ jobs:
         with:
           branch: ghpages  # Ensure this is the branch you want to deploy to.
           folder: .output/public  # Ensure this correctly points to your build output directory.
-          token: ${{ secrets.GITHUB_TOKEN }}  # Consider using the default GITHUB_TOKEN if you're not deploying to a different repo.
+          token: ${{ secrets.ORG_TOKEN }}  # Consider using the default GITHUB_TOKEN if you're not deploying to a different repo.
           clean: true
 
