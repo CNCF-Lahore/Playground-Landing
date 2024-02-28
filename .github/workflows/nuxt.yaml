@@ -3,7 +3,7 @@ name: Build and Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # or your default branch
+      - main  # Update this to match your default branch if necessary
 
 jobs:
   build-and-deploy:
@@ -32,6 +32,8 @@ jobs:
         run: yarn install
 
       - name: Build
+        env:
+          NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}  # Added environment variable
         run: yarn generate
 
       - name: Deploy to GitHub Pages
