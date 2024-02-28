@@ -39,8 +39,8 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          branch: ghpages  # The branch the action should deploy to.
-          folder: .output/public  # Adjusted to the new output folder for Nuxt 3
-          token: ${{ secrets.GH_TOKEN }}  # GitHub token for authentication.
-          repository: CNCF-Lahore/Kubernetes-Bootcamp  # Optional: defaults to the current repo.
-          clean: true  # Optional: Cleans the deployment branch except for the .git directory.
+          branch: ghpages  # Ensure this is the branch you want to deploy to.
+          folder: .output/public  # Ensure this correctly points to your build output directory.
+          token: ${{ secrets.GITHUB_TOKEN }}  # Consider using the default GITHUB_TOKEN if you're not deploying to a different repo.
+          clean: true
+
