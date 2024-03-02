@@ -34,7 +34,7 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
    <template #right>
       <UColorModeButton />
 
-      <UButton to="https://github.com/nuxt/ui" target="_blank" icon="i-simple-icons-github" color="gray" variant="ghost" />
+      <UButton to="https://github.com/CNCF-Lahore/" target="_blank" icon="i-simple-icons-github" color="gray" variant="ghost" />
     </template>
 
     <template #panel>
