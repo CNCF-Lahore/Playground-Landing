@@ -32,11 +32,11 @@ useSeoMeta({
     </ULandingHero>
 
 
-    <!-- <ULandingSection :title="page.features.title" :description="page.features.description" :headline="page.features.headline">
+    <ULandingSection :title="page.features.title" :description="page.features.description" :headline="page.features.headline">
       <UPageGrid id="features" class="scroll-mt-[calc(var(--header-height)+140px+128px+96px)]">
         <ULandingCard v-for="(item, index) in page.features.items" :key="index" v-bind="item" />
       </UPageGrid>
-    </ULandingSection> -->
+    </ULandingSection>
 
     <!-- <ULandingSection :title="page.pricing.title" :description="page.pricing.description" :headline="page.pricing.headline">
       <UPricingGrid id="pricing" compact class="scroll-mt-[calc(var(--header-height)+140px+128px+96px)]">

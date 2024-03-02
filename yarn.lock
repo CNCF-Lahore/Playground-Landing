@@ -356,6 +356,41 @@
   dependencies:
     mime "^3.0.0"
 
+"@cloudinary-util/url-loader@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary-util/url-loader/-/url-loader-4.2.0.tgz#8d686666b5214db1daefd392a115e8a708f968d7"
+  integrity sha512-fpCFqFPAN/f9Gt//25qLXNDYwy5EcOudRzDPOrsEBH6aMwEdFaJuPxvLiP0IP5MCihKji/XDr9QJQ9Wa+amNSA==
+  dependencies:
+    "@cloudinary-util/util" "3.0.0"
+    "@cloudinary/url-gen" "1.15.0"
+    zod "^3.22.4"
+
+"@cloudinary-util/util@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary-util/util/-/util-3.0.0.tgz#4096e0190108b2680c0027bf9afaeca039cea6cc"
+  integrity sha512-o6cJsN49OIelLcSkqUf4WzgefpePDFsAaeQfJbpcKhVdtvmWv71K0oZwMXuX62IY1OolqIg0etMiHtWZPhvPNA==
+
+"@cloudinary/transformation-builder-sdk@^1.10.0", "@cloudinary/transformation-builder-sdk@^1.13.0":
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary/transformation-builder-sdk/-/transformation-builder-sdk-1.13.0.tgz#46dde6fe93dba398521b3c11e345343b5d437bda"
+  integrity sha512-RCP+/B97t+rhh5ZmnOBerM45b73QATIXBv10SqOh9SU03GlNhsK3D3Ol9hrdCd1dcYks/rrTaK41Li5GNSEDJQ==
+  dependencies:
+    "@cloudinary/url-gen" "^1.7.0"
+
+"@cloudinary/url-gen@1.15.0":
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary/url-gen/-/url-gen-1.15.0.tgz#a55c9b51cb27301e0bdc4d60e44a7e73d13db103"
+  integrity sha512-bjU67eZxLUgoRy/Plli4TQio7q6P31OYqnEgXxeN9TKXrzr6h0DeEdIUhKI9gy3HkEBWXWWJIPh7j7gkOJPnyA==
+  dependencies:
+    "@cloudinary/transformation-builder-sdk" "^1.10.0"
+
+"@cloudinary/url-gen@^1.7.0":
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary/url-gen/-/url-gen-1.18.0.tgz#75bc31f06eea19c1f19cac27612fe5a575e0861f"
+  integrity sha512-IszTCvSyvLOOAqtfM47h1jPbWptG0HU7spr4WkO9KdkZfITGk+autVC6lkFZrcbxbu4MRhqUqNklQ7P9yZpqYw==
+  dependencies:
+    "@cloudinary/transformation-builder-sdk" "^1.13.0"
+
 "@csstools/cascade-layer-name-parser@^1.0.8":
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/@csstools/cascade-layer-name-parser/-/cascade-layer-name-parser-1.0.8.tgz#24d841d80e78f6c2970a36d53e6b58e8fcea41f6"
@@ -1058,7 +1093,7 @@
     eslint-plugin-vue "^9.17.0"
     typescript "^5.2.2"
 
-"@nuxt/kit@3.10.3", "@nuxt/kit@^3.10.0", "@nuxt/kit@^3.10.1", "@nuxt/kit@^3.10.2", "@nuxt/kit@^3.10.3", "@nuxt/kit@^3.6.0", "@nuxt/kit@^3.8.1", "@nuxt/kit@^3.8.2", "@nuxt/kit@^3.9.0", "@nuxt/kit@^3.9.1", "@nuxt/kit@^3.9.3":
+"@nuxt/kit@3.10.3", "@nuxt/kit@^3.10.0", "@nuxt/kit@^3.10.1", "@nuxt/kit@^3.10.2", "@nuxt/kit@^3.10.3", "@nuxt/kit@^3.5.0", "@nuxt/kit@^3.6.0", "@nuxt/kit@^3.8.1", "@nuxt/kit@^3.8.2", "@nuxt/kit@^3.9.0", "@nuxt/kit@^3.9.1", "@nuxt/kit@^3.9.3":
   version "3.10.3"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.10.3.tgz#911bc431d9b7541a7269e9e63333f70c8ecb5fd6"
   integrity sha512-PUjYB9Mvx0qD9H1QZBwwtY4fLlCLET+Mm9BVqUOtXCaGoXd6u6BE4e/dGFPk2UEKkIcDGrUMSbqkHYvsEuK9NQ==
@@ -1212,6 +1247,16 @@
     vite-plugin-checker "^0.6.4"
     vue-bundle-renderer "^2.0.0"
 
+"@nuxtjs/cloudinary@^2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/cloudinary/-/cloudinary-2.6.0.tgz#ab27227e6877bef97ff1f3e7b34947f0e9942034"
+  integrity sha512-SU18YU0WUgLVECzjpMudfI5h2nVSlY73CPwKxR4p3TCX7lKzrXX02G7i7FDp7yZtOHD2a17UbFdD6a+KsKAetA==
+  dependencies:
+    "@cloudinary-util/url-loader" "^4.2.0"
+    "@nuxt/kit" "^3.5.0"
+    "@unpic/vue" "^0.0.42"
+    defu "^6.1.2"
+
 "@nuxtjs/color-mode@^3.3.2":
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/@nuxtjs/color-mode/-/color-mode-3.3.2.tgz#20ba12f40cec3556e1c2fe528630e49e60f7dcd4"
@@ -1220,6 +1265,14 @@
     "@nuxt/kit" "^3.8.1"
     lodash.template "^4.5.0"
     pathe "^1.1.1"
+
+"@nuxtjs/dotenv@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/dotenv/-/dotenv-1.4.2.tgz#ad60162ec484f61a93771aa8de18f4dda61a13dc"
+  integrity sha512-/3+Cw5qLNIQD8ZvXLJG1suxvfC4ltlUuYegOwirHrLrzptHh/+rCkBXrNbrz2qAiwc+/yK91XjZGGzNM1dFmCw==
+  dependencies:
+    consola "^3.2.3"
+    dotenv "^8.2.0"
 
 "@nuxtjs/fontaine@^0.4.1":
   version "0.4.1"
@@ -1903,6 +1956,21 @@
     "@unhead/shared" "1.8.10"
     hookable "^5.5.3"
     unhead "1.8.10"
+
+"@unpic/core@^0.0.42":
+  version "0.0.42"
+  resolved "https://registry.yarnpkg.com/@unpic/core/-/core-0.0.42.tgz#2de8fd4624a970f3783407e52fa4091451193eea"
+  integrity sha512-K5Di+P8Bijl7doGDBGU+5VqX44e2iXMEm7G/AVla+9Hgxb5rOm/OXZoOjCUNjx5BOnjsVyegP6vlgsTfBtymkQ==
+  dependencies:
+    unpic "^3.16.0"
+
+"@unpic/vue@^0.0.42":
+  version "0.0.42"
+  resolved "https://registry.yarnpkg.com/@unpic/vue/-/vue-0.0.42.tgz#6caad902170793f200687ace241994c10757967c"
+  integrity sha512-i7ZQsuWlk5Y+wfjI03RXkZJXVOZOqbEKA2ozLaJRj9aRJ2Gx7OAqyzDwhgNZ7i7hAHVVAZOowNHzgOomi4k4Iw==
+  dependencies:
+    "@unpic/core" "^0.0.42"
+    vue "^3.3.4"
 
 "@vercel/nft@^0.26.4":
   version "0.26.4"
@@ -3231,6 +3299,11 @@ dotenv@^16.3.1, dotenv@^16.3.2:
   version "16.4.5"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.4.5.tgz#cdd3b3b604cb327e286b4762e13502f717cb099f"
   integrity sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==
+
+dotenv@^8.2.0:
+  version "8.6.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.6.0.tgz#061af664d19f7f4d8fc6e4ff9b584ce237adcb8b"
+  integrity sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==
 
 duplexer@^0.1.2:
   version "0.1.2"
@@ -7864,6 +7937,11 @@ universalify@^2.0.0:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.1.tgz#168efc2180964e6386d061e094df61afe239b18d"
   integrity sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==
 
+unpic@^3.16.0:
+  version "3.17.0"
+  resolved "https://registry.yarnpkg.com/unpic/-/unpic-3.17.0.tgz#6b39f850b9619b091b32960545ba213d20a4b05b"
+  integrity sha512-1b0ACPDLWqDE4MJ+IW5e48pGVSA5zKU2nF05EDxl/vvHq610MnfHNczIm6RBNPKuAA+G1tQ2ef1mgxj5J7+plw==
+
 unplugin-vue-router@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/unplugin-vue-router/-/unplugin-vue-router-0.7.0.tgz#27bd250c7dc698366cce70c5b72b97c3b3766c26"
@@ -8196,7 +8274,7 @@ vue3-smooth-dnd@^0.0.6:
   dependencies:
     smooth-dnd "^0.12.1"
 
-vue@^3.4.19:
+vue@^3.3.4, vue@^3.4.19:
   version "3.4.21"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.4.21.tgz#69ec30e267d358ee3a0ce16612ba89e00aaeb731"
   integrity sha512-5hjyV/jLEIKD/jYl4cavMcnzKwjMKohureP8ejn3hhEjwhWIhWeuzL2kJAjzl/WyVsgPY56Sy4Z40C3lVshxXA==
@@ -8367,6 +8445,11 @@ zip-stream@^5.0.1:
     archiver-utils "^4.0.1"
     compress-commons "^5.0.1"
     readable-stream "^3.6.0"
+
+zod@^3.22.4:
+  version "3.22.4"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.22.4.tgz#f31c3a9386f61b1f228af56faa9255e845cf3fff"
+  integrity sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==
 
 zwitch@^2.0.0:
   version "2.0.4"

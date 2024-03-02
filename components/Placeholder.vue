@@ -1,32 +1,35 @@
 <template>
-  <div id="app" class="content">
-    <img
-      src="https://cncf-lahore.github.io/Playground-Landing/assets/demo.gif"
-      alt="Demo Animation"
-      class="responsive-gif"
-    />
+  <div class="video-container">
+    <video 
+      playsinline 
+      autoplay 
+      muted 
+      loop 
+      class="responsive-video" 
+      src="https://res.cloudinary.com/dcfz8rw5v/video/upload/v1709383272/s8xmrkqsx7vsxgjbg4kh.mov">
+      Your browser does not support the video tag.
+    </video>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'GifAnimation'
-  // No methods or data necessary for static image display
+  name: 'CloudinaryVideo'
+  // No additional JavaScript is needed for this static component
 };
 </script>
 
 <style scoped>
-.content {
+.video-container {
   width: 100%; /* Use the full width of the container */
-  height: 100%; /* Use the full height of the container */
   display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center the video horizontally */
+  align-items: center; /* Center the video vertically */
 }
 
-.responsive-gif {
-  max-width: 100%; /* Make the GIF responsive */
-  max-height: 100vh; /* Limit height to the view height */
-  object-fit: contain; /* Ensure the aspect ratio is maintained without cropping */
+.responsive-video {
+  width: 100%; /* Make the video responsive */
+  max-height: 100vh; /* Limit the video's height to the viewport height */
+  object-fit: cover; /* Cover the container fully, might crop the video */
 }
 </style>
