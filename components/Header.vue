@@ -31,13 +31,16 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
 
 
 
+   <template #right>
+      <UColorModeButton />
+
+      <UButton to="https://github.com/nuxt/ui" target="_blank" icon="i-simple-icons-github" color="gray" variant="ghost" />
+    </template>
+
     <template #panel>
-      <UAsideLinks :links="links" />
-
-      <UDivider class="my-6" />
-
-   
-      <UButton label="Get started" block />
+      <UNavigationTree :links="mapContentNavigation(navigation)" />
     </template>
   </UHeader>
 </template>
+
+

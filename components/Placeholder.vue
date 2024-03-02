@@ -1,29 +1,32 @@
 <template>
-  <div id="app">
-    <video ref="videoRef" playsinline autoplay muted loop class="responsive-video">
-      <!-- The source will be set by the mounted method -->
-      Your browser does not support the video tag.
-    </video>
+  <div id="app" class="content">
+    <img
+      src="https://cncf-lahore.github.io/Playground-Landing/assets/demo.gif"
+      alt="Demo Animation"
+      class="responsive-gif"
+    />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'VideoAnimation',
-  mounted() {
-    // Set the video source and attempt to play
-    this.$refs.videoRef.src = "https://cncf-lahore.github.io/Playground-Landing/asserts/demo.mp4";
-    this.$refs.videoRef.play().catch(e => {
-      console.error("Auto-play was prevented by the browser.", e);
-    });
-  }
+  name: 'GifAnimation'
+  // No methods or data necessary for static image display
 };
 </script>
 
 <style scoped>
-.responsive-video {
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  background-color: #000; /* Background color for before video load */
+.content {
+  width: 100%; /* Use the full width of the container */
+  height: 100%; /* Use the full height of the container */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+.responsive-gif {
+  max-width: 100%; /* Make the GIF responsive */
+  max-height: 100vh; /* Limit height to the view height */
+  object-fit: contain; /* Ensure the aspect ratio is maintained without cropping */
 }
 </style>
