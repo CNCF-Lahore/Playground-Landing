@@ -8243,6 +8243,13 @@ vue-eslint-parser@^9.4.2:
     lodash "^4.17.21"
     semver "^7.3.6"
 
+vue-faq-accordion@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/vue-faq-accordion/-/vue-faq-accordion-1.6.2.tgz#f8f1d68abba88240e8a5b86dc811db4a154ae861"
+  integrity sha512-PXFgeYQiXBe6fYERfIn44bFYUYsP+TiZ+qBH/KQKvXck85neCZvQiJN8IHwMLSC41fDdBnQvBIi6V9oO/wl/zg==
+  dependencies:
+    vue2-transitions "^0.3.0"
+
 vue-router@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.3.0.tgz#d5913f27bf68a0a178ee798c3c88be471811a235"
@@ -8266,6 +8273,11 @@ vue-tsc@^1.8.27:
     "@volar/typescript" "~1.11.1"
     "@vue/language-core" "1.8.27"
     semver "^7.5.4"
+
+vue2-transitions@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/vue2-transitions/-/vue2-transitions-0.3.0.tgz#765fc0d743103fcfe2d10f431697d8873a075c17"
+  integrity sha512-m1ad8K8kufqiEhj5gXHkkqOioI5sW0FaMbRiO0Tv2WFfGbO2eIKrfkFiO3HPQtMJboimaLCN4p/zL81clLbG4w==
 
 vue3-smooth-dnd@^0.0.6:
   version "0.0.6"

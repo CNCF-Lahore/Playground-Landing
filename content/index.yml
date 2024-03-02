@@ -65,22 +65,6 @@ cta:
     - label: Start Bootcamp Today
       size: xl
       to: https://cncf-lahore.github.io/Kubernetes-Bootcamp
-faq:
-  title: Frequently asked questions
-  description: Here are some FAQ related to Bootcamp and Kubernetes Playground
-  items:
-    - label: Is this a secure service?
-      content: Yes, Your all data will be stored in the GitHub Codespaces , please refain to add Access keys, token to public repositories
-      defaultOpen: true
-    - label: Do i need any GitHub subscription to start playground
-      content: Consectetur irure Lorem nostrud adipisicing aliqua mollit Lorem sit officia magna eiusmod cupidatat.
-    - label: How does the free trial work?
-      content: Quis officia commodo magna eu qui aliquip duis.
-    - label: Can I switch plans later?
-      content: Dolore irure ullamco dolore eu occaecat magna eiusmod dolor aliqua culpa labore.
-    - label: Do you offer refunds?
-      content: Duis mollit nostrud voluptate mollit Lorem dolore commodo veniam incididunt eiusmod.
-    - label: Do you offer support?
-      content: Aliqua sit nisi consequat pariatur Lorem minim irure qui.
+
 
 

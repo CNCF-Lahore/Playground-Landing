@@ -2,13 +2,13 @@
 const links = [{
   label: 'Resources',
   children: [{
-    label: 'Help center'
+    label: 'FAQ Bot'
   }, {
-    label: 'Docs'
+    label: 'KCD 2024'
   }, {
-    label: 'Roadmap'
+    label: 'Podcast'
   }, {
-    label: 'Changelog'
+    label: 'Team'
   }]
 }]
 
