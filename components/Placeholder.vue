@@ -1,7 +1,7 @@
 <template>
   <div class="video-container">
     <video playsinline autoplay muted loop class="responsive-video">
-      <source src="https://github.com/CNCF-Lahore/Playground-Landing/blob/main/asserts/demo.mp4" type="video/mp4">
+      <source src="https://cncf-lahore.github.io/Playground-Landing/asserts/demo.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
