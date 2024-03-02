@@ -38,11 +38,6 @@ useSeoMeta({
       </UPageGrid>
     </ULandingSection>
 
-    <!-- <ULandingSection :title="page.pricing.title" :description="page.pricing.description" :headline="page.pricing.headline">
-      <UPricingGrid id="pricing" compact class="scroll-mt-[calc(var(--header-height)+140px+128px+96px)]">
-        <UPricingCard v-for="(plan, index) in page.pricing.plans" :key="index" v-bind="plan" />
-      </UPricingGrid>
-    </ULandingSection> -->
 
     <!-- <ULandingSection :headline="page.testimonials.headline" :title="page.testimonials.title" :description="page.testimonials.description">
       <UPageColumns id="testimonials" class="xl:columns-4 scroll-mt-[calc(var(--header-height)+140px+128px+96px)]">
@@ -52,11 +47,11 @@ useSeoMeta({
       </UPageColumns>
     </ULandingSection> -->
 
-    <!-- <ULandingSection class="bg-primary-50 dark:bg-primary-400 dark:bg-opacity-10">
+    <ULandingSection class="bg-primary-50 dark:bg-primary-400 dark:bg-opacity-10">
       <ULandingCTA v-bind="page.cta" :card="false" />
-    </ULandingSection> --> 
+    </ULandingSection> 
 
-    <!-- <ULandingSection id="faq" :title="page.faq.title" :description="page.faq.description" class="scroll-mt-[var(--header-height)]">
+  <ULandingSection id="faq" :title="page.faq.title" :description="page.faq.description" class="scroll-mt-[var(--header-height)]">
       <ULandingFAQ
         multiple
         :items="page.faq.items"
@@ -70,6 +65,6 @@ useSeoMeta({
         }"
         class="max-w-4xl mx-auto"
       />
-    </ULandingSection> -->
+    </ULandingSection>
   </div>
 </template>
