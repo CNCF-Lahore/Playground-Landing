@@ -59,12 +59,12 @@ features:
       icon: i-heroicons-chart-bar
 
 cta:
-  title: Get started learning Kubernetes
-  description: Start learning Kubernetes with our dedicated Kubernetes playground and labs for free, no subscription, form submissions required. 
+  title: Experience Kubernetes Playground Locally!
+  description: Get hands-on with Kubernetes right on your local machine. Perfect for both beginners and experts, our Playground offers a seamless learning and testing environment without the cloud hassle.
   links: 
-    - label: Start Bootcamp Today
+    - label: Dive In Now
       size: xl
-      to: https://cncf-lahore.github.io/Kubernetes-Bootcamp
+      to: https://github.com/CNCF-Lahore/kcdctl
 
 
 
