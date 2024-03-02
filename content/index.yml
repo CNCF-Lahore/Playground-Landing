@@ -64,15 +64,15 @@ cta:
   links: 
     - label: Start Bootcamp Today
       size: xl
-      url: https://cncf-lahore.github.io/Kubernetes-Bootcamp/ 
+      to: https://cncf-lahore.github.io/Kubernetes-Bootcamp
 faq:
   title: Frequently asked questions
-  description: Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.
+  description: Here are some FAQ related to Bootcamp and Kubernetes Playground
   items:
     - label: Is this a secure service?
-      content: Qui sunt nostrud aliquip reprehenderit enim proident veniam magna aliquip velit occaecat eiusmod nisi deserunt sunt.
+      content: Yes, Your all data will be stored in the GitHub Codespaces , please refain to add Access keys, token to public repositories
       defaultOpen: true
-    - label: How can I cancel my subscription?
+    - label: Do i need any GitHub subscription to start playground
       content: Consectetur irure Lorem nostrud adipisicing aliqua mollit Lorem sit officia magna eiusmod cupidatat.
     - label: How does the free trial work?
       content: Quis officia commodo magna eu qui aliquip duis.
