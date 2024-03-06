@@ -9,14 +9,14 @@ hero:
     - label: Get started
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
-      to: https://cncf-lahore.github.io/Kubernetes-Bootcamp/
+      to: https://kubecamp.kcdlahore.org/
       target: _blank
       size: xl
     - label: Active your Sandbox
       icon: i-simple-icons-github
       size: xl
       color: gray
-      to: https://cncf-lahore.github.io/Kubernetes-Bootcamp/introduction/active-your-sandbox
+      to: https://kubecamp.kcdlahore.org/introduction/active-your-sandbox
       target: _blank
 logos:
   title: Trusted by the world's best
@@ -31,15 +31,15 @@ features:
   headline: Features
   title: Why Kubernetes Playground?
   description: 
-    Kubernetes Playground offers an interactive, user-friendly environment tailored for both beginners and experienced users to explore, deploy, and manage containerized applications using Kubernetes. It is designed to simplify complex Kubernetes concepts and operations, making it easier to understand and utilize the full potential of Kubernetes for orchestrating containers. Whether you're learning Kubernetes for the first time or looking to test advanced deployments, Kubernetes Playground provides the tools and resources you need in a convenient and accessible format.
+    Kubernetes Playground offers an interactive, user-friendly environment tailored for both beginners and experienced users.
   items:
     - title: Easy to Use
       description: 
-        With a focus on simplicity and user experience, Kubernetes Playground is designed to remove the complexities of Kubernetes setup and management. Users can quickly start projects with pre-configured settings, making it easier to learn and experiment without the hassle of initial configuration.
+        With a focus on simplicity and user experience, Kubernetes Playground is designed to remove the complexities of Kubernetes setup and management. 
       icon: i-heroicons-cog
     - title: Reliable
       description: 
-        Kubernetes Playground is built on stable and proven infrastructure, ensuring that your projects are up and running without interruption. This reliability makes it an ideal environment for testing and deploying production-ready applications.
+        Kubernetes Playground is built on stable and proven infrastructure, ensuring that your projects are up and running without interruption. 
       icon: i-heroicons-check
     - title: Secure
       description: 
@@ -47,15 +47,15 @@ features:
       icon: i-heroicons-lock-closed
     - title: Fast
       description: 
-        Experience rapid deployment and scaling of applications with Kubernetes Playground's optimized environment. Its efficient use of resources and support for automated scaling ensures that your applications perform well, even under heavy load.
+        Experience rapid deployment and scaling of applications with Kubernetes Playground's optimized environment. 
       icon: i-heroicons-rocket-launch
     - title: Affordable
       description: 
-        Kubernetes Playground offers a cost-effective solution for learning and experimenting with Kubernetes. With flexible pricing options, it provides access to a powerful platform without a significant financial investment, making it accessible to individuals and organizations of all sizes.
+        Kubernetes Playground offers a cost-effective solution for learning and experimenting with Kubernetes. 
       icon: i-heroicons-currency-dollar
     - title: Scalable
       description: 
-        Designed to grow with your needs, Kubernetes Playground supports scaling from small projects to large-scale applications. Its scalable architecture allows you to easily adjust resources as your applications grow, ensuring they remain efficient and responsive.
+        Designed to grow with your needs, Kubernetes Playground supports scaling from small projects to large-scale applications. 
       icon: i-heroicons-chart-bar
 
 cta:
