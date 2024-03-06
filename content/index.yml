@@ -43,7 +43,7 @@ features:
       icon: i-heroicons-check
     - title: Secure
       description: 
-        Security is a top priority in Kubernetes Playground, incorporating best practices and industry-standard security measures to protect your applications and data. From automated updates to access controls, you can develop and deploy with confidence.
+        Security is a top priority in Kubernetes Playground, incorporating best practices and industry-standard security measures to protect your applications and data.
       icon: i-heroicons-lock-closed
     - title: Fast
       description: 
